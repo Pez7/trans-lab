@@ -13,7 +13,7 @@ body{
 	background-color: #3e3f41;
 }
 .logoP{
-	padding-top: 95px;
+	padding-top: 49px;
 	width: 123px;
 }
 #head{
@@ -35,6 +35,7 @@ body{
 }
 .forgot{
 	color: #fff;
+	text-decoration: none;
 }
 .cuenta{
 	color:#fff;
