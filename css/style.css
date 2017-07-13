@@ -11,13 +11,13 @@ html{
 }
 body{
 	background-color: #3e3f41;
+	font-family: 'Roboto', sans-serif;
 }
 .logoP{
 	padding-top: 49px;
 	width: 123px;
 }
 #head{
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 33px;
     color: #f6a800;
@@ -42,4 +42,26 @@ body{
 }
 #registrate{
 	color:#f6a800;
+}
+/*Index 2*/
+#body2{
+	background-color:#acacae;
+}
+nav .nav-wrapper{
+	background-color:#3e3f41;
+}
+.btn{
+	background-color: #f6a800;
+	color: #acacae;
+}
+
+#saldo, #tarifa, #perfil, #faq{
+	width: 100%;
+	color:#fff;
+}
+#btns{
+    padding-top: 178px;
+}
+.brand-logo{
+	font-size:15px;
 }
