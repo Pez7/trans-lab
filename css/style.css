@@ -1,0 +1,25 @@
+/*
+COLORES TRANS-LAB:
+tipografía y dividers: #acacae;
+botones: #3b4674;
+amarillo: #f6a800;
+gris oscuro: #3e3f41;
+ */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #3e3f41;
+}
+.logoP{
+	padding-top: 95px;
+	width: 123px;
+}
+#head{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+    color: #f6a800;
+    margin-top: 4px;
+}
