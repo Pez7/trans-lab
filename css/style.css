@@ -71,3 +71,17 @@ nav .brand-logo.center{
 .color{
 	color: #f6a800;
 }
+.img-user{
+	width: 169px;
+    padding-top: 20px;
+}
+.back{
+	background-color: #f6a800;
+	height: 206px;
+}
+#mail{
+	background-color: #fff;
+}
+.text-lowercase{
+	text-transform: lowercase;
+}
