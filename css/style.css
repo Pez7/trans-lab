@@ -44,7 +44,7 @@ body{
 	color:#f6a800;
 }
 /*Index 2*/
-#body2, #body3, #body4{
+#body2, #body3, #body4, #body5{
 	background-color:#dddee0;
 }
 nav .nav-wrapper{
@@ -114,4 +114,24 @@ nav .brand-logo.center{
     font-size: 23px;
     margin-top: -71px;
     font-weight: 700;
+}
+#cal-tarj{
+	margin-top: 10px;
+}
+.input-tarjeta2{
+	width: 104%;
+    margin-top: 13px;
+}
+#label-card{
+    color: #9e9e9e;
+    position: absolute;
+    font-size: 12px;
+    transition: .2s ease-out;
+    text-align: initial;
+    left: 0.75rem;
+    top: 27px;
+}
+#calcular{
+	color:#fff;
+
 }
