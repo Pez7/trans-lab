@@ -45,7 +45,7 @@ body{
 }
 /*Index 2*/
 #body2, #body3{
-	background-color:#acacae;
+	background-color:#dddee0;
 }
 nav .nav-wrapper{
 	background-color:#3e3f41;
@@ -81,7 +81,19 @@ nav .brand-logo.center{
 }
 #mail{
 	background-color: #fff;
+	margin-top: 22px;
+	color: black;
+	width: 277px;
 }
 .text-lowercase{
 	text-transform: lowercase;
+}
+.input-tarjeta{
+	width: 293px;
+    margin-top: -29px;
+}
+#agregar-tarjeta{
+    color: #fff;
+    margin-top: -67px;
+    width: 277px;
 }
