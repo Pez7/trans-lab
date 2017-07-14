@@ -104,3 +104,14 @@ nav .brand-logo.center{
     width: 277px;
     height: 29px;
 }
+.back>div>h4{
+    color: #fff;
+    font-size: 23px;
+    padding-top: 58px;
+}
+#top{
+	color: #fff;
+    font-size: 23px;
+    margin-top: -71px;
+    font-weight: 700;
+}
