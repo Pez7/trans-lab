@@ -6,15 +6,37 @@ $(document).ready(function(){
 		element.preventDefault();
 			validarCorreo();
 			validarPass();
+			ajax();
 
     	if (validarCorreo() && validarPass()){
-    		window.open("home.html","_self", false);
+    		window.location.href = "home.html";
     	}
 	});
 });
+
+	function ajax(){
+    $.ajax({
+    	url: `${}http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=`${},
+    	type: 'GET',
+    	dataType: 'json',
+    	data: {limit: ''},
+    })
+    .done(function(e) {
+		$('.number').append("<p>"+e.saldoTarjeta+"</p>");
+     })
+    .fail(function() {
+    	console.log("error");
+    })
+    .always(function() {
+    	console.log("complete");
+    });
+};
+
+
+
         function validarCorreo() {
             var correo = $('#email').val();
-            var verificar = (/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test(email));
+            var verificar = (/^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/.test(correo));
             if (correo != verificar && pass == "") {
             	alert('Ingrese un correo válido');
             }else{
@@ -24,7 +46,7 @@ $(document).ready(function(){
 
         function validarPass(){
 			var pass = $('#pass').val();
-			if (pass.length > 8 && pass == ""){
+			if (pass.length > 8){
 				alert('Ingresa una contraseña válida');
 				return false;
 			}else{
