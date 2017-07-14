@@ -115,7 +115,7 @@ nav .brand-logo.center{
     margin-top: -71px;
     font-weight: 700;
 }
-#cal-tarj{
+#sal-tarj{
 	margin-top: 10px;
 }
 .input-tarjeta2{
@@ -131,7 +131,17 @@ nav .brand-logo.center{
     left: 0.75rem;
     top: 27px;
 }
-#calcular{
+#saldo{
 	color:#fff;
-
+}
+.saldo{
+    background-color: #3e3f41;
+    color: #fff;
+    margin-top: 18px;
+    font-size: x-small;
+}
+.number{
+    background-color: #f6a800;
+    color: #fff;
+    margin-top: -20px;
 }
