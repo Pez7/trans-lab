@@ -49,9 +49,8 @@ $(document).ready(function(){
 										"</div>"+
 									"</div>");
      })
+    $('#saldo-tarj').val("");
 };
-
-
 
         function validarCorreo() {
             var correo = $('#email').val();
