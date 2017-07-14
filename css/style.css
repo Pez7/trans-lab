@@ -44,7 +44,7 @@ body{
 	color:#f6a800;
 }
 /*Index 2*/
-#body2{
+#body2, #body3{
 	background-color:#acacae;
 }
 nav .nav-wrapper{
@@ -53,6 +53,9 @@ nav .nav-wrapper{
 .btn{
 	background-color: #f6a800;
 	color: #acacae;
+}
+nav .brand-logo.center{
+	font-size: 16px;
 }
 
 #saldo, #tarifa, #perfil, #faq{
