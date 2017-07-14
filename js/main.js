@@ -27,14 +27,17 @@ $(document).ready(function(){
     	data: {limit: ''},
     })
     .done(function(e) {
-		$('.number').append("<p>"+e.saldoTarjeta+"</p>");
+		$('.insert-saldo').append("<div class='row'>"+
+										"<div class='saldo col s12 center'>"+
+											"<p>SALDO TOTAL</p>"+
+										"</div>"+
+									"</div>"+
+									"<div class='row'>"+
+										"<div class='number col s12 center'>"+
+											"<p>"+e.saldoTarjeta+"</p>"+
+										"</div>"+
+									"</div>");
      })
-    .fail(function() {
-    	console.log("error");
-    })
-    .always(function() {
-    	console.log("complete");
-    });
 };
 
 
