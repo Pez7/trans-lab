@@ -13,7 +13,18 @@ $(document).ready(function(){
 
 	$('#saldo').click(function(){
 		ajax();
-	})
+	});
+
+	$('#agregar-tarjeta').click(function(){
+		var numTarj = $('#tarjeta').val();
+		$('.num-perfil').append("<div class='row'>"+
+									"<div class='col s12 center'>"+
+										"<a class='tarj- text-lowercase btn'>"+numTarj+"</a>"+
+									"</div>"+
+								"</div>");
+		$('#tarjeta').val("");
+	});
+
 });
 
 
