@@ -137,11 +137,18 @@ nav .brand-logo.center{
 .saldo{
     background-color: #3e3f41;
     color: #fff;
-    margin-top: 18px;
+    margin-top: 11px;
     font-size: x-small;
 }
 .number{
     background-color: #f6a800;
     color: #fff;
     margin-top: -20px;
+}
+#calcular{
+	color:#fff;
+}
+.borde{
+    padding: 0px 17px;
+    margin: 15px -7px;
 }
