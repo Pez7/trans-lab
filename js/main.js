@@ -6,17 +6,22 @@ $(document).ready(function(){
 		element.preventDefault();
 			validarCorreo();
 			validarPass();
-			ajax();
-
-    	if (validarCorreo() && validarPass()){
+	if (validarCorreo() && validarPass()){
     		window.location.href = "home.html";
     	}
 	});
+
+	$('#saldo').click(function(){
+		ajax();
+	})
 });
 
+
+
 	function ajax(){
+		var saldo = $('#saldo-tarj').val();
     $.ajax({
-    	url: `${}http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=`${},
+    	url: `http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=${saldo}`,
     	type: 'GET',
     	dataType: 'json',
     	data: {limit: ''},
